@@ -2,7 +2,7 @@ const fs = require('fs');
 const { range } = require('lodash');
 const semverUtils = require('semver-utils');
 const packageRepoUrl = require('package-repo-url');
-const { yaml, json, markdown } = require('mrm-core');
+const { yaml, json, markdown } = require('@xzhou/mrm-core');
 
 module.exports = function task({ readmeFile, maxNode }) {
 	const pkg = json('package.json');

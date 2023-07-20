@@ -58,7 +58,9 @@ packages.forEach(filepath => {
 	console.log(`👉 ${filepath}`);
 	const contents = read(filepath);
 	const [, package] = getTitle(contents);
-	const title = package.replace('mrm-taks-', '').replace('mrm-preset-', '');
+	const title = package
+		.replace('@xzhou/mrm-taks-', '')
+		.replace('@xzhou/mrm-preset-', '');
 	const [, sidebarLabel = title] = getSidebarTitle(contents);
 
 	if (title.startsWith('[DEPRECATED]')) {

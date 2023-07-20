@@ -1,5 +1,5 @@
 {
-	"name": "mrm-task-codecov",
+	"name": "@xzhou/mrm-task-codecov",
 	"version": "5.1.17",
 	"description": "Mrm task that adds Codecov to Travis CI config",
 	"author": {
@@ -26,7 +26,7 @@
 	],
 	"dependencies": {
 		"git-default-branch": "^1.0.0",
-		"mrm-core": "^7.1.17",
+		"@xzhou/mrm-core": "workspace:^",
 		"package-repo-url": "^1.0.3"
 	}
 }

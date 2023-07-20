@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-license');
+module.exports = require('@xzhou/mrm-task-license');

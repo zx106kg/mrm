@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-contributing');
+module.exports = require('@xzhou/mrm-task-contributing');

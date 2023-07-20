@@ -50,7 +50,7 @@ If you want to use a task from npm (or any default task), you should include it 
 For example, if you want to use `mrm-task-gitignore` task, you need to create a `gitignore/index.js` file in your preset package folder:
 
 ```js
-module.exports = require('mrm-task-gitignore');
+module.exports = require('@xzhou/mrm-task-gitignore');
 ```
 
 The package name should follow this pattern: `mrm-preset-<TASK>`, otherwise you’ll have to type full package name when you run a task:

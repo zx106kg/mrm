@@ -1,4 +1,4 @@
-const { ini } = require('mrm-core');
+const { ini } = require('@xzhou/mrm-core');
 
 const jsonRules = {
 	indent_style: 'space',

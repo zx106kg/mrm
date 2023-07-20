@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-editorconfig');
+module.exports = require('@xzhou/mrm-task-editorconfig');

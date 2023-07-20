@@ -1,6 +1,6 @@
 const packageRepoUrl = require('package-repo-url');
 const gitDefaultBranch = require('git-default-branch');
-const { MrmError, yaml, markdown, packageJson } = require('mrm-core');
+const { MrmError, yaml, markdown, packageJson } = require('@xzhou/mrm-core');
 
 const coverageScript = 'test:coverage';
 

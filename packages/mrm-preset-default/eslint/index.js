@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-eslint');
+module.exports = require('@xzhou/mrm-task-eslint');

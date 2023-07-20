@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-ci');
+module.exports = require('@xzhou/mrm-task-ci');

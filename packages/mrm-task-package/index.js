@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 const meta = require('user-meta');
 const gitUsername = require('git-username');
-const { json } = require('mrm-core');
+const { json } = require('@xzhou/mrm-core');
 const rc = require('rc');
 
 function getConfig() {

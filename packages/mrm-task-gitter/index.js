@@ -1,4 +1,4 @@
-const { markdown, packageJson } = require('mrm-core');
+const { markdown, packageJson } = require('@xzhou/mrm-core');
 
 module.exports = function task({ packageName, readme }) {
 	const url = `https://gitter.im/${packageName}`;

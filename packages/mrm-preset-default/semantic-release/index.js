@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-semantic-release');
+module.exports = require('@xzhou/mrm-task-semantic-release');

@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-travis');
+module.exports = require('@xzhou/mrm-task-travis');

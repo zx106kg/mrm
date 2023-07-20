@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-jest');
+module.exports = require('@xzhou/mrm-task-jest');

@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-lint-staged');
+module.exports = require('@xzhou/mrm-task-lint-staged');

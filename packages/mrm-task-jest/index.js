@@ -7,7 +7,7 @@ const {
 	template,
 	install,
 	uninstall,
-} = require('mrm-core');
+} = require('@xzhou/mrm-core');
 
 function task() {
 	const packages = ['jest'];

@@ -1,4 +1,4 @@
-const { json, packageJson, install } = require('mrm-core');
+const { json, packageJson, install } = require('@xzhou/mrm-core');
 
 module.exports = function task({
 	stylelintRules,

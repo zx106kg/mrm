@@ -1,5 +1,5 @@
 {
-	"name": "mrm-task-jest",
+	"name": "@xzhou/mrm-task-jest",
 	"version": "4.1.17",
 	"description": "Mrm task that adds Jest",
 	"author": {
@@ -26,6 +26,6 @@
 	],
 	"dependencies": {
 		"lodash": "^4.17.15",
-		"mrm-core": "^7.1.17"
+		"@xzhou/mrm-core": "workspace:^"
 	}
 }

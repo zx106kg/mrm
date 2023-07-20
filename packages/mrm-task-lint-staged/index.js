@@ -4,8 +4,8 @@ const {
 	install,
 	getExtsFromCommand,
 	uninstall,
-} = require('mrm-core');
-const { isUsingYarnBerry } = require('mrm-core/src/npm');
+} = require('@xzhou/mrm-core');
+const { isUsingYarnBerry } = require('@xzhou/mrm-core/src/npm');
 const { castArray } = require('lodash');
 const husky = require('husky');
 

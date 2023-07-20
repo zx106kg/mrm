@@ -1,15 +1,15 @@
 jest.mock('fs');
-jest.mock('mrm-core/src/util/log', () => ({
+jest.mock('@xzhou/mrm-core/src/util/log', () => ({
 	added: jest.fn(),
 }));
 
 const fs = jest.requireActual('fs');
 const path = require('path');
-const { getTaskOptions } = require('mrm');
+const { getTaskOptions } = require('@xzhou/mrm');
 const vol = require('memfs').vol;
 const task = require('./index');
 const getAuthorName = require('./index').getAuthorName;
-const { json } = require('mrm-core');
+const { json } = require('@xzhou/mrm-core');
 
 const console$log = console.log;
 

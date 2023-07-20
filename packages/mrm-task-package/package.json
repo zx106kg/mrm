@@ -1,5 +1,5 @@
 {
-	"name": "mrm-task-package",
+	"name": "@xzhou/mrm-task-package",
 	"version": "4.1.17",
 	"description": "Mrm task that adds package.json file",
 	"author": {
@@ -26,7 +26,7 @@
 	],
 	"dependencies": {
 		"git-username": "^1.0.0",
-		"mrm-core": "^7.1.17",
+		"@xzhou/mrm-core": "workspace:^",
 		"rc": "^1.2.8",
 		"user-meta": "^1.0.0"
 	}

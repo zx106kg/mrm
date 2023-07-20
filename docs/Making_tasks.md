@@ -12,7 +12,7 @@ The simplest task could look like this:
 
 ```js
 // Mrm module to work with new line separated text files
-const { lines } = require('mrm-core');
+const { lines } = require('@xzhou/mrm-core');
 
 module.exports = function task() {
   // Read .gitignore if it exists
@@ -65,7 +65,7 @@ const {
   lines,
   // Install npm packages
   install
-} = require('mrm-core');
+} = require('@xzhou/mrm-core');
 
 // task() function gets task parameters object as the first argument
 // (see `module.exports.parameters` at the end of the file)

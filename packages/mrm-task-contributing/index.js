@@ -1,6 +1,6 @@
 const path = require('path');
 const gitUsername = require('git-username');
-const { template, packageJson } = require('mrm-core');
+const { template, packageJson } = require('@xzhou/mrm-core');
 
 module.exports = function task({ contributingFile, github, packageName }) {
 	// Create Contributing.md (no update)

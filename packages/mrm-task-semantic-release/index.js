@@ -1,5 +1,5 @@
 const packageRepoUrl = require('package-repo-url');
-const { packageJson, yaml, markdown, uninstall } = require('mrm-core');
+const { packageJson, yaml, markdown, uninstall } = require('@xzhou/mrm-core');
 
 module.exports = function task({ workflowFile, readmeFile }) {
 	// Create workflow file (no update)

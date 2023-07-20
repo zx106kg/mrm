@@ -6,7 +6,7 @@ const {
 	install,
 	uninstall,
 	getExtsFromCommand,
-} = require('mrm-core');
+} = require('@xzhou/mrm-core');
 
 const getConfigName = (configName, scope, prefix) => {
 	if (!scope && !configName.startsWith(prefix)) {

@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-codecov');
+module.exports = require('@xzhou/mrm-task-codecov');

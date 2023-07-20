@@ -120,11 +120,11 @@ describe('resolveUsingNpx', () => {
 describe('getPackageName', () => {
 	it('should resolve non-scoped task names', () => {
 		const result = getPackageName('task', 'pizza');
-		expect(result).toEqual('mrm-task-pizza');
+		expect(result).toEqual('@xzhou/mrm-task-pizza');
 	});
 	it('should resolve non-scoped preset names', () => {
 		const result = getPackageName('preset', 'default');
-		expect(result).toEqual('mrm-preset-default');
+		expect(result).toEqual('@xzhou/mrm-preset-default');
 	});
 	it('should resolve scoped task names', () => {
 		const result = getPackageName('task', '@myorg/pizza');

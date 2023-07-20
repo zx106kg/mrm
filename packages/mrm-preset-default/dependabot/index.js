@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-dependabot');
+module.exports = require('@xzhou/mrm-task-dependabot');

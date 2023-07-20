@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-readme');
+module.exports = require('@xzhou/mrm-task-readme');

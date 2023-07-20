@@ -8,7 +8,7 @@ const {
 	install,
 	getStyleForFile,
 	getExtsFromCommand,
-} = require('mrm-core');
+} = require('@xzhou/mrm-core');
 
 const packages = {
 	prettier: '>=2',

@@ -1,8 +1,8 @@
 jest.mock('fs');
-jest.mock('mrm-core/src/util/log', () => ({
+jest.mock('@xzhou/mrm-core/src/util/log', () => ({
 	added: jest.fn(),
 }));
-jest.mock('mrm-core/src/npm', () => ({
+jest.mock('@xzhou/mrm-core/src/npm', () => ({
 	install: jest.fn(),
 }));
 

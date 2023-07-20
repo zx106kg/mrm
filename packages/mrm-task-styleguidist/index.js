@@ -1,5 +1,5 @@
 const path = require('path');
-const { packageJson, template, install } = require('mrm-core');
+const { packageJson, template, install } = require('@xzhou/mrm-core');
 
 const configFile = 'styleguide.config.js';
 

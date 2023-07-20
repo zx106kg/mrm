@@ -1,5 +1,5 @@
 const fs = require('fs');
-const { lines } = require('mrm-core');
+const { lines } = require('@xzhou/mrm-core');
 
 module.exports = function task() {
 	const remove = ['node_modules'];

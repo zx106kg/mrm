@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-stylelint');
+module.exports = require('@xzhou/mrm-task-stylelint');

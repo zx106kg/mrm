@@ -1,13 +1,13 @@
 jest.mock('fs');
 jest.mock('git-username');
-jest.mock('mrm-core/src/util/log', () => ({
+jest.mock('@xzhou/mrm-core/src/util/log', () => ({
 	added: jest.fn(),
 }));
 
 const fs = jest.requireActual('fs');
 const path = require('path');
 const { omitBy } = require('lodash');
-const { getTaskOptions } = require('mrm');
+const { getTaskOptions } = require('@xzhou/mrm');
 const vol = require('memfs').vol;
 const task = require('./index');
 

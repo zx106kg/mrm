@@ -11,7 +11,12 @@ Utilities to write codemods for config files (JSON, YAML, INI, Markdown, etc.). 
 Add ESLint to your project:
 
 ```js
-const { json, lines, packageJson, install } = require('mrm-core');
+const {
+  json,
+  lines,
+  packageJson,
+  install
+} = require('@xzhou/mrm-core');
 
 module.exports = function(config) {
   const preset = config('preset', 'tamia');
@@ -78,7 +83,7 @@ npm install mrm-core
 API:
 
 ```js
-const { json } = require('mrm-core');
+const { json } = require('@xzhou/mrm-core');
 const file = json('file name', { default: 'values' });
 file.exists(); // File exists?
 file.get(); // Return everything
@@ -106,7 +111,7 @@ json('.eslintrc')
 API:
 
 ```js
-const { yaml } = require('mrm-core');
+const { yaml } = require('@xzhou/mrm-core');
 const file = yaml(
   'file name', // File name
   { default: 'values' }, // Default value
@@ -137,7 +142,7 @@ yaml('.travis.yml')
 API:
 
 ```js
-const { ini } = require('mrm-core');
+const { ini } = require('@xzhou/mrm-core');
 const file = ini('file name', 'comment');
 file.exists(); // File exists?
 file.get(); // Return everything
@@ -152,7 +157,7 @@ file.delete(); // Delete file
 Example:
 
 ```js
-const { ini } = require('mrm-core');
+const { ini } = require('@xzhou/mrm-core');
 ini('.editorconfig', 'editorconfig.org')
   .set('_global', { root: true })
   .set('*', {
@@ -178,7 +183,7 @@ end_of_line = lf
 API:
 
 ```js
-const { lines } = require('mrm-core');
+const { lines } = require('@xzhou/mrm-core');
 const file = lines('file name', ['default', 'values']);
 file.exists(); // File exists?
 file.get(); // Return everything
@@ -206,7 +211,7 @@ lines('.eslintignore')
 API:
 
 ```js
-const { markdown } = require('mrm-core');
+const { markdown } = require('@xzhou/mrm-core');
 const file = markdown('file name');
 file.exists(); // File exists?
 file.get(); // Return file content
@@ -240,7 +245,7 @@ Templates use ECMAScript [template literals](https://developer.mozilla.org/en-US
 API:
 
 ```js
-const { template } = require('mrm-core');
+const { template } = require('@xzhou/mrm-core');
 const file = template('file name', 'template file name');
 file.exists(); // File exists?
 file.get(); // Return file content
@@ -277,7 +282,7 @@ Permission is hereby granted, free of charge, to any person obtaining...
 API:
 
 ```js
-const { packageJson } = require('mrm-core');
+const { packageJson } = require('@xzhou/mrm-core');
 const file = packageJson({ default: 'values' });
 file.exists(); // File exists?
 file.get(); // Return everything
@@ -307,7 +312,11 @@ packageJson()
 ### File system helpers
 
 ```js
-const { copyFiles, deleteFiles, makeDirs } = require('mrm-core');
+const {
+  copyFiles,
+  deleteFiles,
+  makeDirs
+} = require('@xzhou/mrm-core');
 copyFiles('source dir', 'file name'); // Copy file
 copyFiles('source dir', ['file name 1', 'file name 2']); // Copy files
 copyFiles('source dir', 'file name', { overwrite: false }); // Do not overwrite
@@ -322,7 +331,7 @@ makeDirs(['dir name 1', 'dir name 2']); // Create folders
 Installs npm package(s) and saves them to `package.json` if they aren’t installed yet or not satisfying range.
 
 ```js
-const { install } = require('mrm-core');
+const { install } = require('@xzhou/mrm-core');
 install('eslint'); // Install to devDependencies
 install(['tamia', 'lodash'], { dev: false }); // Install to dependencies
 install({ lodash: '^4.17.3' }); // Install particular version
@@ -337,7 +346,7 @@ install(['github/repo']); // Install non-registry package without version
 Uninstalls npm package(s) and removes them from `package.json`:
 
 ```js
-const { uninstall } = require('mrm-core');
+const { uninstall } = require('@xzhou/mrm-core');
 uninstall('eslint'); // Uninstall from devDependencies
 uninstall(['tamia', 'lodash'], { dev: false }); // Uninstall from dependencies
 ```
@@ -345,7 +354,7 @@ uninstall(['tamia', 'lodash'], { dev: false }); // Uninstall from dependencies
 To use Yarn pass `yarn: true`:
 
 ```js
-const { install, uninstall } = require('mrm-core');
+const { install, uninstall } = require('@xzhou/mrm-core');
 
 uninstall(['eslint'], { yarn: true });
 install(['standard'], { yarn: true });
@@ -363,7 +372,7 @@ const {
   getStyleForFile,
   getIndent,
   format
-} = require('mrm-core');
+} = require('@xzhou/mrm-core');
 inferStyle('for (;;) {\n  alert(1);\n}\n');
 // => { insert_final_newline: true, indent_style: 'space', indent_size: 2 }
 getStyleForFile('test.js');
@@ -378,7 +387,7 @@ format('alert(1)\n', { insert_final_newline: false });
 Get file extensions list from a command like `eslint . --fix --ext .js,.jsx`:
 
 ```js
-const { getExtsFromCommand } = require('mrm-core');
+const { getExtsFromCommand } = require('@xzhou/mrm-core');
 getExtsFromCommand(`eslint . --fix --ext .js,.jsx`, 'ext');
 // => ['js', 'jsx']
 getExtsFromCommand(`prettier --write '**/*.js'`);
@@ -390,7 +399,7 @@ getExtsFromCommand(`prettier --write '**/*.js'`);
 Use this class to notify user about expected errors in your tasks. It will be printed without a stack trace and will abort task.
 
 ```js
-const { MrmError } = require('mrm-core');
+const { MrmError } = require('@xzhou/mrm-core');
 if (!fs.existsSync('.travis.yml')) {
   throw new MrmError('Run travis task first');
 }

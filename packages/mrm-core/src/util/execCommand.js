@@ -1,5 +1,5 @@
 // @ts-check
-const { spawnSync } = require('child_process');
+const spawnSync = require('cross-spawn').sync;
 const escapeArguments = require('./escapeArguments');
 
 /**

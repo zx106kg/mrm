@@ -1,5 +1,5 @@
 {
-	"name": "mrm",
+	"name": "@xzhou/mrm",
 	"version": "4.1.17",
 	"description": "Codemods for your project config files",
 	"author": {
@@ -30,7 +30,7 @@
 		"longest": "^2.0.1",
 		"middleearth-names": "^1.1.0",
 		"minimist": "^1.2.0",
-		"mrm-core": "^7.1.17",
+		"@xzhou/mrm-core": "workspace:^",
 		"semver-utils": "^1.1.4",
 		"update-notifier": "^4.1.0",
 		"user-home": "^2.0.0",

@@ -1,4 +1,4 @@
-const { yaml } = require('mrm-core');
+const { yaml } = require('@xzhou/mrm-core');
 
 module.exports = function task({ workflowFile }) {
 	// Create workflow file (no update)

@@ -1,15 +1,17 @@
 {
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
   "version": "independent",
-  "useWorkspaces": true,
+  "npmClient": "pnpm",
   "command": {
     "version": {
-      "allowBranch": "master",
+      "allowBranch": "release",
       "conventionalCommits": true,
       "noPrivate": true,
       "message": "chore: Publish :shipit: [skip ci]"
     }
   },
   "ignoreChanges": [
+    "pnpm-lock.json",
     "package-lock.json",
     "Readme.md",
     "Changelog.md",

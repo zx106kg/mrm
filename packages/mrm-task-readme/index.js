@@ -2,7 +2,7 @@ const path = require('path');
 const meta = require('user-meta');
 const parseAuthor = require('parse-author');
 const packageRepoUrl = require('package-repo-url');
-const { template, packageJson } = require('mrm-core');
+const { template, packageJson } = require('@xzhou/mrm-core');
 const { template: smplTemplate, templateFromFile } = require('smpltmpl');
 
 function getAuthorName(pkg) {

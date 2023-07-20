@@ -1,14 +1,14 @@
 jest.mock('fs');
 jest.mock('git-username');
-jest.mock('mrm-core/src/util/log', () => ({
+jest.mock('@xzhou/mrm-core/src/util/log', () => ({
 	added: jest.fn(),
 }));
-jest.mock('mrm-core/src/npm', () => ({
+jest.mock('@xzhou/mrm-core/src/npm', () => ({
 	uninstall: jest.fn(),
 }));
 
-const { uninstall } = require('mrm-core');
-const { getTaskOptions } = require('mrm');
+const { uninstall } = require('@xzhou/mrm-core');
+const { getTaskOptions } = require('@xzhou/mrm');
 const vol = require('memfs').vol;
 const task = require('./index');
 

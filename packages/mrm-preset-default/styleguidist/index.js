@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-styleguidist');
+module.exports = require('@xzhou/mrm-task-styleguidist');

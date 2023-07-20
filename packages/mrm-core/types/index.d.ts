@@ -1,4 +1,4 @@
-declare module 'mrm-core' {
+declare module '@xzhou/mrm-core' {
 	import * as child_process from 'child_process';
 
 	interface File {
@@ -9,7 +9,7 @@ declare module 'mrm-core' {
 		save(content: string): this;
 		delete(): void;
 	}
-	
+
 	interface Ini {
 		exists(): boolean;
 		get(): any;
@@ -19,7 +19,7 @@ declare module 'mrm-core' {
 		save(): this;
 		delete(): void;
 	}
-	
+
 	interface Json {
 		exists(): boolean;
 		get(): any;
@@ -31,7 +31,7 @@ declare module 'mrm-core' {
 		save(): this;
 		delete(): void;
 	}
-	
+
 	interface Lines {
 		exists(): boolean;
 		get(): string[];
@@ -41,7 +41,7 @@ declare module 'mrm-core' {
 		save(): this;
 		delete(): void;
 	}
-	
+
 	interface Markdown {
 		exists(): boolean;
 		get(): string;
@@ -56,7 +56,7 @@ declare module 'mrm-core' {
 		save(): this;
 		delete(): void;
 	}
-	
+
 	interface Template {
 		exists(): boolean;
 		get(): string;
@@ -64,7 +64,7 @@ declare module 'mrm-core' {
 		save(): this;
 		delete(): void;
 	}
-	
+
 	interface Yaml {
 		exists(): boolean;
 		get(): any;
@@ -75,7 +75,7 @@ declare module 'mrm-core' {
 		save(): this;
 		delete(): void;
 	}
-	
+
 	interface PackageJson extends Json {
 		getScript(name: string, subcommand?: string): string;
 		setScript(name: string, command: string): this;
@@ -83,11 +83,11 @@ declare module 'mrm-core' {
 		prependScript(name: string, command: string): this;
 		removeScript(name: RegExp | string, match?: RegExp | string): this;
 	}
-	
+
 	interface CopyFilesOptions {
 		overwrite?: boolean;
 	}
-	
+
 	interface NpmOptions {
 		dev?: boolean;
 		yarn?: boolean;
@@ -95,17 +95,17 @@ declare module 'mrm-core' {
 		pnpm?: boolean;
 		versions?: Dependencies;
 	}
-	
+
 	interface EditorConfigStyle {
 		indent_style?: 'tab' | 'space' | 'unset';
 		indent_size?: number | 'tab' | 'unset';
 		insert_final_newline?: true | false | 'unset';
 	}
-	
+
 	interface Dependencies {
 		[key: string]: string;
 	}
-	
+
 	class MrmError extends Error {
 		constructor(message: string, extra?: any);
 	}
@@ -161,7 +161,11 @@ declare module 'mrm-core' {
 	function lines(filename: string, defaultValue?: string[]): Lines;
 	function markdown(filename: string): Markdown;
 	function template(filename: string, templateFile: string): Template;
-	function yaml(filename: string, defaultValue?: object, options?: {version?: string}): Yaml;
+	function yaml(
+		filename: string,
+		defaultValue?: object,
+		options?: { version?: string }
+	): Yaml;
 
 	// Special files
 	function packageJson(defaultValue?: object): PackageJson;

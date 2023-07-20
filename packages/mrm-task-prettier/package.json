@@ -1,5 +1,5 @@
 {
-	"name": "mrm-task-prettier",
+	"name": "@xzhou/mrm-task-prettier",
 	"version": "5.1.17",
 	"description": "Mrm task that adds Prettier",
 	"author": {
@@ -30,6 +30,6 @@
 	"dependencies": {
 		"editorconfig-to-prettier": "0.1.1",
 		"lodash": "^4.17.15",
-		"mrm-core": "^7.1.17"
+		"@xzhou/mrm-core": "workspace:^"
 	}
 }

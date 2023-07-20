@@ -8,12 +8,12 @@ jest.mock('got', () => () => ({
 			{ version: 'v10.23.0', date: '2020-10-27', lts: 'Dubnium' },
 		]),
 }));
-jest.mock('mrm-core/src/util/log', () => ({
+jest.mock('@xzhou/mrm-core/src/util/log', () => ({
 	added: jest.fn(),
 	removed: jest.fn(),
 }));
 
-const { getTaskOptions } = require('mrm');
+const { getTaskOptions } = require('@xzhou/mrm');
 const vol = require('memfs').vol;
 const task = require('./index');
 

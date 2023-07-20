@@ -4,7 +4,7 @@ const got = require('got');
 const packageRepoUrl = require('package-repo-url');
 const gitDefaultBranch = require('git-default-branch');
 const semverUtils = require('semver-utils');
-const { yaml, packageJson, markdown } = require('mrm-core');
+const { yaml, packageJson, markdown } = require('@xzhou/mrm-core');
 
 const NODE_DIST_URL = 'https://nodejs.org/dist/index.json';
 

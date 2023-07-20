@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-gitignore');
+module.exports = require('@xzhou/mrm-task-gitignore');

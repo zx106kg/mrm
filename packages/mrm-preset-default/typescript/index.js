@@ -1,1 +1,1 @@
-module.exports = require('mrm-task-typescript');
+module.exports = require('@xzhou/mrm-task-typescript');

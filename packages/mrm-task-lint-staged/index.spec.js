@@ -1,5 +1,5 @@
 jest.mock('fs');
-jest.mock('mrm-core/src/npm', () => ({
+jest.mock('@xzhou/mrm-core/src/npm', () => ({
 	uninstall: jest.fn(),
 	install: jest.fn(),
 	isUsingYarnBerry: jest.fn(),
@@ -9,9 +9,9 @@ jest.mock('husky', () => ({
 	add: jest.fn(),
 }));
 
-const { install, uninstall } = require('mrm-core');
-const { isUsingYarnBerry } = require('mrm-core/src/npm');
-const { getTaskOptions } = require('mrm');
+const { install, uninstall } = require('@xzhou/mrm-core');
+const { isUsingYarnBerry } = require('@xzhou/mrm-core/src/npm');
+const { getTaskOptions } = require('@xzhou/mrm');
 const husky = require('husky');
 const vol = require('memfs').vol;
 const task = require('./index');
