@@ -4,7 +4,7 @@
   "npmClient": "pnpm",
   "command": {
     "version": {
-      "allowBranch": "my-release",
+      "allowBranch": "release",
       "conventionalCommits": true,
       "noPrivate": true,
       "message": "chore: Publish :shipit: [skip ci]"
