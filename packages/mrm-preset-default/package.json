@@ -1,6 +1,6 @@
 {
 	"name": "@xzhou/mrm-preset-default",
-	"version": "4.1.17",
+	"version": "5.0.0",
 	"private": true,
 	"description": "Common tasks for Mrm",
 	"author": {
